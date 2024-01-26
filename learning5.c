@@ -1,4 +1,3 @@
-```c
 /* 標準ライブラリ ヘッダファイルのインクルード */
 #include <stdio.h>
 #include <stdlib.h>
