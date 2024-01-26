@@ -6,6 +6,7 @@
 void showNum(int);
 
 int main(void) {
+
     /* 標準入力から値を受け取り, 末尾の改行を消す. */
     char str[16] = "\0";
     fgets(str, sizeof(str), stdin);
