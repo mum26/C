@@ -2,21 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 
-/* プロトタイプ宣言 */
-int getFirstWord(char *, char *);
-
-int main(void) {
-    /* getFirstWord関数に値を渡す変数, 受け取る変数を宣言 */
-    char str[] = "abc de        Hello,World!!";
-    char result[128] = "\0";
-    getFirstWord(result, &str[6]);
-    printf("%s\n", result);
-}
-
 /* 受け取った文字列から次のスペースまでの文字列を変数に戻す */
-int getFirstWord(char *result, char *str) {
-    /* result を初期化し, 受け取ったポインタが NULL なら終了 */
-    result[0] = '\0';
+int getNextWord(char *result, char *str) {
+    /* 受け取ったポインタが NULL なら終了 */
     if (str == NULL) return -1;
 
     /* スペースを飛ばす */
