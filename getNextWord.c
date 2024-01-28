@@ -1,7 +1,3 @@
-/* ライブラリをインクルード */
-#include <stdio.h>
-#include <string.h>
-
 /* 受け取った文字列から次のスペースまでの文字列を変数に戻す */
 int getNextWord(char *result, char *str) {
     /* 受け取ったポインタが NULL なら終了 */
